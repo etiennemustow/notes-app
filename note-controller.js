@@ -1,7 +1,7 @@
 (function(exports){
 
-function NoteController(notelist = new Notelist()){
-  this.notelist = notelist
+function NoteController(notelist){
+  this.notelist = notelist || new Notelist
   var note = this.notelist.store("Favourite drink: seltzer", Note)
   this.view = new NoteListView()
   this.view.list = this.notelist
