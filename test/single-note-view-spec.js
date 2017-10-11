@@ -1,10 +1,14 @@
 (function(exports) {
  function testSingleNoteViewDisplaysHTML() {
-   var note = new Note("hello")
-   var view = new SingleNoteView(note);
+
+   var noteDouble = {
+     text: 'hi'
+   }
+
+   var view = new SingleNoteView(noteDouble);
 
 
-   if (view.getHTML() !== "<div>" + "hello" + "</div" ) {
+   if (view.getHTML() !== "<div>" + "hi" + "</div>" ) {
      throw new Error("Note isn't showing");
    }
  };
