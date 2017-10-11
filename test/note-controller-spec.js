@@ -1,7 +1,5 @@
-  window.onload = function() {
-
-   (function() {
-
+(function(exports) {
+   function testNoteControllerDisplaysHTML(){
       var NoteListStub = {
         store: function() {}
       };
@@ -20,6 +18,7 @@
       if(document.getElementById("note").innerHTML !== testText) {
         throw new Error("not showing text")
       };
-})()
 
-}
+    }
+  testNoteControllerDisplaysHTML()
+})(this);

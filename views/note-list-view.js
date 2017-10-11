@@ -16,7 +16,7 @@
      var view = ["<ul>"];
      for (i = 0; i < entriesCount; i++){
        var note = entries[i];
-       var noteText = note.display();
+       var noteText = note.display().substring(0, 19);
        view.push("<li><div>"+noteText+"</div></li>");
      }
      view.push("</ul>");
