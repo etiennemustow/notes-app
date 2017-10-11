@@ -9,8 +9,8 @@
    return this.list
  };
 
-NoteList.prototype.store = function(text){
-  var note = new Note(text)
+NoteList.prototype.store = function(text, Constructor = Note){
+  var note = new Constructor(text)
   this.list.push(note)
 }
 

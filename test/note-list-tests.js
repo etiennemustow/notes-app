@@ -2,7 +2,7 @@
 (function(exports) {
  function testNoteListStoresNotes() {
    var list = new NoteList();
-   list.store("text")
+   list.store("text", Note)
 
    var entry = list.display()
 

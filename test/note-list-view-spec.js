@@ -7,7 +7,7 @@
      throw new Error("There are no notes");
    }
 
-   notelist.store("testing text");
+   notelist.store("testing text", Note);
 
    var entries = notelist.display();
    var firstEntry = entries[0];
