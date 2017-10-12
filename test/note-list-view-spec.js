@@ -7,13 +7,14 @@
      throw new Error("There are no notes");
    }
 
-   notelist.store("testing text", Note);
+   notelist.store("testing text of over 20 characters is here", Note);
 
    var entries = notelist.display();
    var firstEntry = entries[0];
    var firstNote = firstEntry.display();
 
-   if (view.render() !== "<ul><li><div>testing text</div></li></ul>" ) {
+
+   if (view.render() !== "<ul><li><div>testing text of ove</div></li></ul>" ) {
      throw new Error("Not showing text");
    }
  };
