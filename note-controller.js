@@ -7,6 +7,10 @@ function NoteController(notelist){
   this.view.list = this.notelist;
 }
 
+document.querySelector("#text").addEventListener("click", function(event) {
+  event.preventDefault()
+})
+
 NoteController.prototype.getHTML = function(){
   var note = this.view.render();
   var element = document.getElementById("note");
@@ -31,8 +35,12 @@ NoteController.prototype.getHTML = function(){
         document
           .getElementById("note")
           .innerHTML = note;
-      };
+      }
+
+
 };
+
+
 
 exports.NoteController = NoteController;
 })(this);
