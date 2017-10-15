@@ -14,7 +14,7 @@
    var firstNote = firstEntry.display();
 
 
-   if (view.render() !== "<ul><li><div>testing text of ove</div></li></ul>" ) {
+   if (view.render() !== "<ul class=notelist><a href='#0'><li><div>testing text of ove</div></li></a></ul>" ) {
      throw new Error("Not showing text");
    }
  };

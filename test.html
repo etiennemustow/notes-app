@@ -3,9 +3,8 @@
     <html>
     <head>
     </head>
-    <body>
+    <body onload="window.alert('Welcome to my note app!')">
       <div id=note></div>
-
 
     <script src="model/note-model.js"></script>
     <script src="model/note-list-model.js"></script>
@@ -13,8 +12,14 @@
     <script src="views/single-note-view.js"></script>
 
 
+    <script src="test/note-model-tests.js"></script>
+    <script src="test/note-list-tests.js"></script>
+    <script src="test/note-list-view-spec.js"></script>
+    <script src="test/single-note-view-spec.js"></script>
+
 
     <script src="note-controller.js"></script>
+    <script src="test/note-controller-spec.js"></script>
 
   </body>
     </html>

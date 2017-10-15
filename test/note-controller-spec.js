@@ -20,5 +20,5 @@
       };
 
     }
-  testNoteControllerDisplaysHTML()
+  //testNoteControllerDisplaysHTML()
 })(this);
