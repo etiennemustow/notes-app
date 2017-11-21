@@ -8,28 +8,43 @@ This was a week of me learning pure Javascript. Although I did succeed in implem
 
 ## User Stories
 
+**1:**
 ``` 
 As a user, so that a note can be made,
 I'd like for a note to be able to have a description
 
 ```
-```
-As a user, so that I can see all my notes, 
-I'd like to be able to store all my notes in a list
-```
-```
-As a user, so that I can view all my notes,
-I'd like to be able to see all my notes in a note list view
-```
-```
-As a user, so that I can edit my notes,
-I'd like to be able to interact with my notes 
-```
+**2:**
 
 ```
-As a user, so that I can delete my notes,
-I'd like for there to be an option to delete my notes
+As a user, so that I can store all my notes, 
+I'd like to be able to store all my notes in a list
 ```
+**3:**
+
+```
+As a user, so that I can see just one of my notes,
+I'd like to be able to view just one note on a screen
+```
+**4:**
+
+```
+As a user, so that I can view all my notes,
+I'd like to be able to view all my notes on a screen
+```
+**5:**
+
+```
+As a user, so that I can interact my notes,
+I'd like to be able to edit my notes 
+```
+**6:**
+
+```
+As a user, so that I can remove unwanted notes,
+I'd like to be able to delete my notes
+```
+**7:**
 
 ```
 As a user, so that I can enjoy my time using this application,
@@ -38,9 +53,9 @@ I'd like for it to be visually engaging
 
 ## Proposed technologies:
 
-* Back-end:
+* **Back-end:**
   - Models: Javascript
-* Front-end:
+* **Front-end:**
   - HTML, CSS, Node.JS
   
 ### Why use Node.JS?
@@ -55,7 +70,21 @@ I'd like for it to be visually engaging
 * Existing: Jasmine
 * Non-existing: After implementing with aforementioned (Possible extension of project -> Create my own assertion library)
 
-## Previously (I would recommend not running project until I've updated (Expected to finish: **26th November, 2017**))
+## Planning
+
+### Class-Responsibility Cards
+
+Class | Responsibility | Interacts with: |
+------|----------------|-----------------|
+**Note** | Has a description | NoteList|
+**NoteList** | Can contain note(s) | Note, NoteListView |
+**NoteListView** | Can display NoteLists | NoteListView, Server |
+
+With these "cards", I'm just splitting the responsibilities (Single Responsibility Principle) between the classes so that it's clear which class is supposed to do what.
+By doing this, it'll be easier to expand my project.
+
+
+## Previously (I would not recommend running this project until I've updated (Expected to finish: **26th November, 2017**))
 
 #### To run project:
 
