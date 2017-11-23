@@ -2,7 +2,7 @@
 
 The aim of this challenge was to build an API that can be loaded onto a browser that a user can interact with to create, read, update and delete notes.
 
-# Reterospective 
+# Reterospective 😅
 
 This was a week of me learning pure Javascript. Although I did succeed in implementing some user stories. Upon reflection of the code in this project, I want to display how I'd approach this project again.
 
@@ -67,8 +67,8 @@ I'd like for it to be visually engaging
 
 ## Proposed Testing:
 
-* Existing: Jasmine
-* Non-existing: After implementing with aforementioned (Possible extension of project -> Create my own assertion library)
+* **Existing:** Jasmine
+* **Non-existing: After implementing with aforementioned (Possible extension of project -> Create my own assertion library)
 
 ## Planning
 
@@ -83,8 +83,11 @@ Class | Responsibility | Interacts with: |
 With these "cards", I'm just splitting the responsibilities (Single Responsibility Principle) between the classes so that it's clear which class is supposed to do what.
 By doing this, it'll be easier to expand my project.
 
+### Setting up Node.js 
 
-## Previously (I would not recommend running this project until I've updated (Expected to finish: **26th November, 2017**))
+
+
+## Previously (I would not recommend running this project until I've updated (Expected to finish an MVP by: **26th November, 2017**))
 
 #### To run project:
 
